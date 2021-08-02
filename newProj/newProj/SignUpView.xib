@@ -25,26 +25,26 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8ni-Lt-A11">
+                <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8ni-Lt-A11">
                     <rect key="frame" x="60" y="150" width="255" height="50"/>
-                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="tintColor" red="0.42619765230000001" green="0.42619765230000001" blue="0.42619765230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="kPx-VK-qw0"/>
                     </constraints>
-                    <color key="textColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="28"/>
-                    <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter MailID" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uBo-9O-vqO">
+                <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter MailID" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uBo-9O-vqO">
                     <rect key="frame" x="60" y="240" width="255" height="50"/>
-                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Noa-Io-Qu8"/>
                     </constraints>
-                    <color key="textColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="28"/>
-                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohK-G4-ICA">
                     <rect key="frame" x="50" y="30" width="275" height="60"/>
@@ -55,25 +55,25 @@
                     <color key="textColor" red="0.29592343293268519" green="0.7489835274583756" blue="0.25459737286561257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iUq-la-bIe">
+                <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iUq-la-bIe">
                     <rect key="frame" x="60" y="420" width="255" height="50"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Rd3-C4-p0x"/>
                     </constraints>
-                    <color key="textColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="28"/>
-                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eyB-NN-7ee">
+                <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eyB-NN-7ee">
                     <rect key="frame" x="60" y="330" width="255" height="50"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="qXO-8C-lQ9"/>
                     </constraints>
-                    <color key="textColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="28"/>
-                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Have an account:-" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Uv-5j-GbI">
                     <rect key="frame" x="60" y="490" width="204.5" height="30"/>
@@ -84,31 +84,14 @@
                     <color key="textColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lGS-h0-7UA">
-                    <rect key="frame" x="270" y="490" width="45" height="30"/>
-                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <accessibilityTraits key="traits" link="YES"/>
-                    </accessibility>
+                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uYu-CL-lxa">
+                    <rect key="frame" x="112.5" y="598" width="150" height="60"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="oQr-5N-k6n"/>
+                        <constraint firstAttribute="height" constant="60" id="UCb-rs-fdl"/>
+                        <constraint firstAttribute="width" constant="150" id="ZkD-QE-v6L"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="Login">
-                        <color key="titleColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="loginclicked:" destination="-1" eventType="touchUpInside" id="kSq-KT-YGh"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYu-CL-lxa">
-                    <rect key="frame" x="137.5" y="560" width="100" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="UCb-rs-fdl"/>
-                        <constraint firstAttribute="width" constant="100" id="ZkD-QE-v6L"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="28"/>
                     <state key="normal" title="Submit">
                         <color key="titleColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -116,19 +99,38 @@
                         <action selector="submitClicked:" destination="-1" eventType="touchUpInside" id="nLt-yW-gBo"/>
                     </connections>
                 </button>
+                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lGS-h0-7UA">
+                    <rect key="frame" x="112.5" y="528" width="150" height="50"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" link="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="g4M-Xd-nF1"/>
+                        <constraint firstAttribute="height" constant="50" id="oQr-5N-k6n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.29592343290000001" green="0.74898352749999997" blue="0.25459737290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginclicked:" destination="-1" eventType="touchUpInside" id="kSq-KT-YGh"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="ohK-G4-ICA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="33V-tX-i8O"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iUq-la-bIe" secondAttribute="trailing" constant="60" id="4dZ-0V-V3Z"/>
-                <constraint firstItem="uYu-CL-lxa" firstAttribute="top" secondItem="5Uv-5j-GbI" secondAttribute="bottom" constant="40" id="DJi-n4-5DG"/>
                 <constraint firstItem="5Uv-5j-GbI" firstAttribute="top" secondItem="iUq-la-bIe" secondAttribute="bottom" constant="20" id="Gbe-jT-8AY"/>
                 <constraint firstItem="5Uv-5j-GbI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="Gee-wI-uav"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uBo-9O-vqO" secondAttribute="trailing" constant="60" id="Jbr-5h-4L3"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8ni-Lt-A11" secondAttribute="trailing" constant="60" id="Nxl-NU-U35"/>
+                <constraint firstItem="uYu-CL-lxa" firstAttribute="top" secondItem="lGS-h0-7UA" secondAttribute="bottom" constant="20" id="OiS-iy-1VH"/>
                 <constraint firstItem="uBo-9O-vqO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="Oqg-b6-0L1"/>
                 <constraint firstItem="iUq-la-bIe" firstAttribute="top" secondItem="eyB-NN-7ee" secondAttribute="bottom" constant="40" id="PZO-OG-TdM"/>
                 <constraint firstItem="iUq-la-bIe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R2w-zh-N0n"/>
+                <constraint firstItem="lGS-h0-7UA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xkv-ih-pcd"/>
                 <constraint firstItem="uBo-9O-vqO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZKA-4Q-6rO"/>
                 <constraint firstItem="8ni-Lt-A11" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="b92-QG-ajx"/>
                 <constraint firstItem="eyB-NN-7ee" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="cD7-vX-Pd5"/>
@@ -138,10 +140,9 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ohK-G4-ICA" secondAttribute="trailing" constant="50" id="lI9-r6-uH5"/>
                 <constraint firstItem="uYu-CL-lxa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nnL-QQ-2cE"/>
                 <constraint firstItem="ohK-G4-ICA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="noF-UH-P19"/>
+                <constraint firstItem="lGS-h0-7UA" firstAttribute="top" secondItem="5Uv-5j-GbI" secondAttribute="bottom" constant="8" id="oOo-Og-FbB"/>
                 <constraint firstItem="eyB-NN-7ee" firstAttribute="top" secondItem="uBo-9O-vqO" secondAttribute="bottom" constant="40" id="qEz-pJ-KB3"/>
-                <constraint firstItem="lGS-h0-7UA" firstAttribute="top" secondItem="iUq-la-bIe" secondAttribute="bottom" constant="20" id="qed-Es-t6J"/>
                 <constraint firstItem="8ni-Lt-A11" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sel-6G-4G7"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lGS-h0-7UA" secondAttribute="trailing" constant="60" id="sfu-Rf-IU8"/>
                 <constraint firstItem="ohK-G4-ICA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="vM7-70-IPK"/>
                 <constraint firstItem="iUq-la-bIe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="vaf-nN-lcd"/>
                 <constraint firstItem="eyB-NN-7ee" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xOp-ev-dpA"/>

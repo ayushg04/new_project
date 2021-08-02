@@ -22,9 +22,18 @@ class SignUpView: UIView {
         Bundle.main.loadNibNamed("SignUpView", owner: self, options: nil)
         addSubview(container)
         container.frame = self.bounds
-//        Login.layer.borderwidth = 2
-//        login.layer.borderColor = UIColor.green.cgColor
-//        container.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        Login.layer.borderWidth = 3
+        Login.layer.borderColor = UIColor.green.cgColor
+        submit.layer.borderWidth = 3
+        submit.layer.borderColor = UIColor.green.cgColor
+        nameText.layer.borderWidth = 3
+        nameText.layer.borderColor = UIColor.green.cgColor
+        mailID.layer.borderWidth = 3
+        mailID.layer.borderColor = UIColor.green.cgColor
+        pass.layer.borderWidth = 3
+        pass.layer.borderColor = UIColor.green.cgColor
+        confirmPass.layer.borderWidth = 3
+        confirmPass.layer.borderColor = UIColor.green.cgColor
     }
     @IBAction func loginclicked(_ sender: UIButton) {
         print("Login clicked")
