@@ -1,6 +1,9 @@
 import UIKit
+enum ButtonType {
+    case login,signup
+}
 class SignUpView: UIView {
-
+    // Outlets
     @IBOutlet weak var container: UIView!
     @IBOutlet weak var heading: UILabel!
     @IBOutlet weak var nameText: UITextField!
@@ -10,6 +13,8 @@ class SignUpView: UIView {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var Login: UIButton!
     @IBOutlet weak var submit: UIButton!
+    var SignUpViewInstance: SignUpView? = nil
+//    var type: ButtonType = .login
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -36,9 +41,22 @@ class SignUpView: UIView {
         confirmPass.layer.borderColor = UIColor.green.cgColor
     }
     @IBAction func loginclicked(_ sender: UIButton) {
-        print("Login clicked")
-        
+//        self.buttons()
+            print("Login clicked")
+            heading.text = "Login"
+            nameText.isHidden = true
+            confirmPass.isHidden = true
+            descLabel.isHidden = true
+            Login.setTitle("signup", for: .normal)
+            SignUpViewInstance?.isHidden = false
     }
+//    func buttons(){
+//        if Login.titleLabel?.text == "login"{
+//            print("login clicked")
+//        } else if Login.titleLabel?.text == "signup"{
+//                print("signup clicked")
+//            }
+//        }
     @IBAction func submitClicked(_ sender: UIButton){
         print("Submit clicked")
     }
