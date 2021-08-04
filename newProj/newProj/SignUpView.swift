@@ -1,7 +1,4 @@
 import UIKit
-enum ButtonType {
-    case login,signup
-}
 class SignUpView: UIView {
     // Outlets
     @IBOutlet weak var container: UIView!
@@ -12,9 +9,9 @@ class SignUpView: UIView {
     @IBOutlet weak var confirmPass: UITextField!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var Login: UIButton!
+    @IBOutlet weak var SignupBtn: UIButton!
     @IBOutlet weak var submit: UIButton!
     var SignUpViewInstance: SignUpView? = nil
-//    var type: ButtonType = .login
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -26,9 +23,13 @@ class SignUpView: UIView {
     private func commonInit() {
         Bundle.main.loadNibNamed("SignUpView", owner: self, options: nil)
         addSubview(container)
+        descLabel.text = "Do you have an account:-"
+        SignupBtn.isHidden = true
         container.frame = self.bounds
         Login.layer.borderWidth = 3
         Login.layer.borderColor = UIColor.green.cgColor
+        SignupBtn.layer.borderWidth = 3
+        SignupBtn.layer.borderColor = UIColor.green.cgColor
         submit.layer.borderWidth = 3
         submit.layer.borderColor = UIColor.green.cgColor
         nameText.layer.borderWidth = 3
@@ -40,23 +41,28 @@ class SignUpView: UIView {
         confirmPass.layer.borderWidth = 3
         confirmPass.layer.borderColor = UIColor.green.cgColor
     }
-    @IBAction func loginclicked(_ sender: UIButton) {
-//        self.buttons()
-            print("Login clicked")
-            heading.text = "Login"
-            nameText.isHidden = true
-            confirmPass.isHidden = true
-            descLabel.isHidden = true
-            Login.setTitle("signup", for: .normal)
-            SignUpViewInstance?.isHidden = false
+    @IBAction func signupClicked(_ sender: Any) {
+        print("Sign up clicked")
+        heading.text = "Sign Up"
+        nameText.isHidden = false
+        confirmPass.isHidden = false
+        descLabel.text = "Do you have an account:-"
+        descLabel.isHidden = false
+        Login.isHidden = false
+        SignupBtn.isHidden = true
+        SignUpViewInstance?.isHidden = false
     }
-//    func buttons(){
-//        if Login.titleLabel?.text == "login"{
-//            print("login clicked")
-//        } else if Login.titleLabel?.text == "signup"{
-//                print("signup clicked")
-//            }
-//        }
+    @IBAction func loginclicked(_ sender: UIButton) {
+        print("Login clicked")
+        heading.text = "Login"
+        descLabel.text = "Already have an account:-"
+        nameText.isHidden = true
+        confirmPass.isHidden = true
+        descLabel.isHidden = false
+        SignupBtn.isHidden = false
+        Login.isHidden = true
+        SignUpViewInstance?.isHidden = false
+    }
     @IBAction func submitClicked(_ sender: UIButton){
         print("Submit clicked")
     }
