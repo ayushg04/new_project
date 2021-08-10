@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseAuth
 class SignUpView: UIView {
     // Outlets
     @IBOutlet weak var container: UIView!
@@ -40,9 +41,10 @@ class SignUpView: UIView {
         pass.layer.borderColor = UIColor.green.cgColor
         confirmPass.layer.borderWidth = 3
         confirmPass.layer.borderColor = UIColor.green.cgColor
+        pass.isSecureTextEntry = true
+        confirmPass.isSecureTextEntry = true
     }
-    @IBAction func signupClicked(_ sender: Any) {
-        print("Sign up clicked")
+    func SignUpPage() {
         heading.text = "Sign Up"
         nameText.isHidden = false
         confirmPass.isHidden = false
@@ -52,8 +54,7 @@ class SignUpView: UIView {
         SignupBtn.isHidden = true
         SignUpViewInstance?.isHidden = false
     }
-    @IBAction func loginclicked(_ sender: UIButton) {
-        print("Login clicked")
+    func LoginPage() {
         heading.text = "Login"
         descLabel.text = "Already have an account:-"
         nameText.isHidden = true
@@ -63,7 +64,58 @@ class SignUpView: UIView {
         Login.isHidden = true
         SignUpViewInstance?.isHidden = false
     }
+    @IBAction func signupClicked(_ sender: Any) {
+        print("Sign up clicked")
+        SignUpPage()
+    }
+    @IBAction func loginclicked(_ sender: UIButton) {
+        print("Login clicked")
+        LoginPage()
+    }
     @IBAction func submitClicked(_ sender: UIButton){
         print("Submit clicked")
+        validateField()
+    }
+    func validateField() {
+        guard let mail = mailID.text, !mail.isEmpty,
+              let passwrd  = pass.text, !passwrd.isEmpty else {
+            print("Fields are empty")
+            return
+        }
+        
+        //get auth instance
+        FirebaseAuth.Auth.auth().signIn(withEmail: mail, password: passwrd, completion: { [weak self] results, error in
+            guard let strongself = self else {
+                return
+            }
+            guard error == nil else{
+                //show account creation
+                strongself.accountCreation(email: mail, password: passwrd)
+                return
+            }
+            print("You have successfully signed in")
+            //next page will push
+            self!.nameText.isHidden = true
+            self!.pass.isHidden = true
+            self!.confirmPass.isHidden = true
+            self!.mailID.isHidden = true
+        })
+    }
+    func accountCreation(email: String, password: String) {
+        print("IN the account creation page")
+        SignUpPage()
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] result,error in
+            guard error == nil else{
+                //show account creation
+                print("Error in account creation")
+                return
+            }
+            print("You have successfully signed in")
+            //next page will push
+            self!.nameText.isHidden = true
+            self!.pass.isHidden = true
+            self!.confirmPass.isHidden = true
+            self!.mailID.isHidden = true
+        })
     }
 }
