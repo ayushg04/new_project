@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		25044C9FDEDB8F5A0F5071FC /* Pods_newProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8050594D1590106EE38C44DF /* Pods_newProj.framework */; };
 		9E2D007226BAD0E4000D3781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E2D007126BAD0E4000D3781 /* GoogleService-Info.plist */; };
+		9E86720626C264DB004B3AC8 /* secondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E86720526C264DB004B3AC8 /* secondView.xib */; };
+		9E86720826C264EC004B3AC8 /* secondview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E86720726C264EC004B3AC8 /* secondview.swift */; };
 		9ED6B16C26B7CA7F009AD14C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6B16B26B7CA7F009AD14C /* AppDelegate.swift */; };
 		9ED6B16E26B7CA7F009AD14C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6B16D26B7CA7F009AD14C /* SceneDelegate.swift */; };
 		9ED6B17026B7CA7F009AD14C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6B16F26B7CA7F009AD14C /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 		2390CAE6C55775E11249E2AC /* Pods-newProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newProj.debug.xcconfig"; path = "Target Support Files/Pods-newProj/Pods-newProj.debug.xcconfig"; sourceTree = "<group>"; };
 		8050594D1590106EE38C44DF /* Pods_newProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2D007126BAD0E4000D3781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E86720526C264DB004B3AC8 /* secondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = secondView.xib; sourceTree = "<group>"; };
+		9E86720726C264EC004B3AC8 /* secondview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondview.swift; sourceTree = "<group>"; };
 		9ED6B16826B7CA7F009AD14C /* newProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED6B16B26B7CA7F009AD14C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED6B16D26B7CA7F009AD14C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +66,6 @@
 				2390CAE6C55775E11249E2AC /* Pods-newProj.debug.xcconfig */,
 				BDBB027ACD60EFBF7DB65CBE /* Pods-newProj.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,6 +100,8 @@
 				9E2D007126BAD0E4000D3781 /* GoogleService-Info.plist */,
 				9ED6B17F26B7DAAB009AD14C /* SignUpView.xib */,
 				9ED6B18126B7DACA009AD14C /* SignUpView.swift */,
+				9E86720526C264DB004B3AC8 /* secondView.xib */,
+				9E86720726C264EC004B3AC8 /* secondview.swift */,
 			);
 			path = newProj;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			files = (
 				9ED6B17826B7CA81009AD14C /* LaunchScreen.storyboard in Resources */,
 				9ED6B17526B7CA81009AD14C /* Assets.xcassets in Resources */,
+				9E86720626C264DB004B3AC8 /* secondView.xib in Resources */,
 				9E2D007226BAD0E4000D3781 /* GoogleService-Info.plist in Resources */,
 				9ED6B18026B7DAAB009AD14C /* SignUpView.xib in Resources */,
 				9ED6B17326B7CA7F009AD14C /* Main.storyboard in Resources */,
@@ -218,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E86720826C264EC004B3AC8 /* secondview.swift in Sources */,
 				9ED6B17026B7CA7F009AD14C /* ViewController.swift in Sources */,
 				9ED6B18226B7DACA009AD14C /* SignUpView.swift in Sources */,
 				9ED6B16C26B7CA7F009AD14C /* AppDelegate.swift in Sources */,

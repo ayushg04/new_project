@@ -13,6 +13,7 @@ class SignUpView: UIView {
     @IBOutlet weak var SignupBtn: UIButton!
     @IBOutlet weak var submit: UIButton!
     var SignUpViewInstance: SignUpView? = nil
+    var newView: secondView?
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -95,10 +96,7 @@ class SignUpView: UIView {
             }
             print("You have successfully signed in")
             //next page will push
-            self!.nameText.isHidden = true
-            self!.pass.isHidden = true
-            self!.confirmPass.isHidden = true
-            self!.mailID.isHidden = true
+            self!.newView?.container.isHidden = false
         })
     }
     func accountCreation(email: String, password: String) {
@@ -112,10 +110,8 @@ class SignUpView: UIView {
             }
             print("You have successfully signed in")
             //next page will push
-            self!.nameText.isHidden = true
-            self!.pass.isHidden = true
-            self!.confirmPass.isHidden = true
-            self!.mailID.isHidden = true
+//            self?.newView.container.isHidden = false
+            self!.newView?.container.isHidden = false
         })
     }
 }
